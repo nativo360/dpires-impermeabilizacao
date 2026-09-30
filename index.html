@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>D'Pires Impermeabilização | Reformas e Pinturas em São Luís</title>
+
+  <meta name="description" content="D'Pires Impermeabilização em São Luís - MA. Impermeabilização de lajes, calhas e reservatórios, pinturas e reformas em geral. Solicite seu orçamento.">
+
+  <meta name="theme-color" content="#0757b7">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:#fff;
+      color:#172033;
+      line-height:1.5;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    :root{
+      --azul:#0757b7;
+      --azul-escuro:#043d83;
+      --azul-claro:#eaf3ff;
+      --preto:#111827;
+      --cinza:#64748b;
+      --cinza-claro:#f5f7fa;
+      --branco:#ffffff;
+      --verde:#25D366;
+      --radius:18px;
+      --shadow:0 12px 35px rgba(0,0,0,.10);
+    }
+
+    .container{
+      width:min(1120px, calc(100% - 36px));
+      margin:auto;
+    }
+
+    /* HEADER */
+
+    header{
+      background:#fff;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      border-bottom:1px solid #e9edf3;
+    }
+
+    .header-content{
+      height:72px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .logo{
+      font-size:25px;
+      font-weight:900;
+      color:var(--azul);
+      letter-spacing:-1px;
+    }
+
+    .logo small{
+      display:block;
+      font-size:9px;
+      color:#222;
+      letter-spacing:2px;
+      text-align:center;
+      margin-top:-5px;
+    }
+
+    .menu-button{
+      width:42px;
+      height:42px;
+      border:none;
+      background:var(--azul-claro);
+      border-radius:12px;
+      font-size:23px;
+      color:var(--azul);
+      cursor:pointer;
+    }
+
+    nav{
+      display:none;
+      position:absolute;
+      top:72px;
+      left:0;
+      right:0;
+      background:#fff;
+      padding:20px;
+      box-shadow:0 15px 25px rgba(0,0,0,.08);
+    }
+
+    nav.active{
+      display:block;
+    }
+
+    nav a{
+      display:block;
+      padding:13px 8px;
+      font-weight:700;
+      border-bottom:1px solid #eee;
+    }
+
+    /* HERO */
+
+    .hero{
+      min-height:520px;
+      display:flex;
+      align-items:flex-end;
+      position:relative;
+      color:#fff;
+
+      background:
+      linear-gradient(
+        180deg,
+        rgba(0,30,75,.10),
+        rgba(0,36,85,.90)
+      ),
+      url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=80');
+
+      background-size:cover;
+      background-position:center;
+    }
+
+    .hero-content{
+      padding:70px 0 55px;
+    }
+
+    .hero-badge{
+      display:inline-block;
+      padding:8px 14px;
+      background:rgba(255,255,255,.15);
+      backdrop-filter:blur(6px);
+      border:1px solid rgba(255,255,255,.25);
+      border-radius:30px;
+      font-size:13px;
+      font-weight:700;
+      margin-bottom:18px;
+    }
+
+    .hero h1{
+      font-size:38px;
+      line-height:1.05;
+      max-width:600px;
+      margin-bottom:16px;
+    }
+
+    .hero p{
+      font-size:17px;
+      max-width:550px;
+      opacity:.94;
+      margin-bottom:28px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      border-radius:12px;
+      padding:15px 21px;
+      font-weight:800;
+      transition:.2s;
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+    }
+
+    .btn-whatsapp{
+      background:var(--verde);
+      color:#fff;
+      box-shadow:0 10px 25px rgba(37,211,102,.25);
+    }
+
+    .btn-blue{
+      background:var(--azul);
+      color:#fff;
+    }
+
+    /* SECTIONS */
+
+    section{
+      padding:65px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:35px;
+    }
+
+    .section-title span{
+      color:var(--azul);
+      font-size:13px;
+      text-transform:uppercase;
+      font-weight:900;
+      letter-spacing:1.5px;
+    }
+
+    .section-title h2{
+      font-size:30px;
+      margin-top:6px;
+      line-height:1.15;
+    }
+
+    .section-title p{
+      color:var(--cinza);
+      margin:12px auto 0;
+      max-width:620px;
+    }
+
+    /* SERVIÇOS */
+
+    .services-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+    }
+
+    .service-card{
+      background:#fff;
+      border:1px solid #e7ebf0;
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:0 7px 25px rgba(0,0,0,.05);
+      transition:.25s;
+    }
+
+    .service-card:hover{
+      transform:translateY(-5px);
+      box-shadow:var(--shadow);
+    }
+
+    .service-image{
+      height:190px;
+      background-size:cover;
+      background-position:center;
+    }
+
+    .impermeabilizacao{
+      background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80');
+    }
+
+    .pintura{
+      background-image:url('https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=800&q=80');
+    }
+
+    .reformas{
+      background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80');
+    }
+
+    .service-content{
+      padding:22px;
+    }
+
+    .service-icon{
+      width:48px;
+      height:48px;
+      border-radius:12px;
+      background:var(--azul-claro);
+      color:var(--azul);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:23px;
+      margin-bottom:15px;
+    }
+
+    .service-content h3{
+      font-size:21px;
+      margin-bottom:8px;
+    }
+
+    .service-content p{
+      color:var(--cinza);
+      font-size:14px;
+    }
+
+    /* DIFERENCIAIS */
+
+    .benefits{
+      background:var(--azul);
+      color:#fff;
+    }
+
+    .benefits .section-title span{
+      color:#a9d2ff;
+    }
+
+    .benefits .section-title p{
+      color:#d8e9ff;
+    }
+
+    .benefits-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:25px 15px;
+    }
+
+    .benefit{
+      text-align:center;
+    }
+
+    .benefit-icon{
+      width:62px;
+      height:62px;
+      background:rgba(255,255,255,.13);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:0 auto 12px;
+      font-size:25px;
+    }
+
+    .benefit h3{
+      font-size:15px;
+    }
+
+    /* SOBRE */
+
+    .about{
+      background:#f7f9fc;
+    }
+
+    .about-grid{
+      display:grid;
+      gap:30px;
+    }
+
+    .about-image{
+      min-height:300px;
+      border-radius:22px;
+      background:
+      linear-gradient(rgba(0,0,0,.05),rgba(0,0,0,.05)),
+      url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80');
+      background-size:cover;
+      background-position:center;
+      box-shadow:var(--shadow);
+    }
+
+    .about-content h2{
+      font-size:30px;
+      margin-bottom:15px;
+    }
+
+    .about-content p{
+      color:var(--cinza);
+      margin-bottom:15px;
+    }
+
+    .check{
+      display:flex;
+      gap:10px;
+      margin:11px 0;
+      font-weight:700;
+    }
+
+    .check span{
+      color:var(--azul);
+    }
+
+    /* LISTA DE SERVIÇOS */
+
+    .details{
+      background:#fff;
+    }
+
+    .detail-card{
+      border-radius:18px;
+      padding:25px;
+      background:#f7f9fc;
+      margin-bottom:17px;
+    }
+
+    .detail-card h3{
+      color:var(--azul);
+      font-size:21px;
+      margin-bottom:15px;
+    }
+
+    .detail-card ul{
+      list-style:none;
+    }
+
+    .detail-card li{
+      padding:8px 0;
+      border-bottom:1px solid #e6e9ee;
+      font-size:14px;
+    }
+
+    .detail-card li:last-child{
+      border:none;
+    }
+
+    .detail-card li::before{
+      content:"✓";
+      color:var(--azul);
+      font-weight:bold;
+      margin-right:9px;
+    }
+
+    /* PORTFÓLIO */
+
+    .portfolio{
+      background:#f7f9fc;
+    }
+
+    .portfolio-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+    }
+
+    .portfolio-item{
+      height:175px;
+      border-radius:14px;
+      overflow:hidden;
+      background:#ddd;
+    }
+
+    .portfolio-item img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:.3s;
+    }
+
+    .portfolio-item:hover img{
+      transform:scale(1.06);
+    }
+
+    /* CTA */
+
+    .cta{
+      background:
+      linear-gradient(135deg,#0757b7,#043d83);
+      color:#fff;
+      text-align:center;
+    }
+
+    .cta h2{
+      font-size:30px;
+      margin-bottom:12px;
+    }
+
+    .cta p{
+      max-width:550px;
+      margin:0 auto 25px;
+      color:#dcecff;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#101827;
+      color:#fff;
+      padding:45px 0 100px;
+    }
+
+    footer .logo{
+      margin-bottom:18px;
+    }
+
+    .footer-text{
+      color:#aeb8c8;
+      font-size:14px;
+      margin-bottom:22px;
+    }
+
+    .contact-item{
+      margin:10px 0;
+      color:#dce3ed;
+      font-size:14px;
+    }
+
+    .copyright{
+      border-top:1px solid #263143;
+      margin-top:30px;
+      padding-top:20px;
+      font-size:12px;
+      color:#8490a1;
+      text-align:center;
+    }
+
+    /* WHATSAPP FIXO */
+
+    .whatsapp-fixed{
+      position:fixed;
+      bottom:20px;
+      right:18px;
+      width:62px;
+      height:62px;
+      background:var(--verde);
+      color:#fff;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:29px;
+      z-index:999;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+      border:3px solid #fff;
+    }
+
+    /* DESKTOP */
+
+    @media(min-width:768px){
+
+      .menu-button{
+        display:none;
+      }
+
+      nav{
+        display:flex;
+        position:static;
+        padding:0;
+        box-shadow:none;
+        gap:28px;
+        align-items:center;
+      }
+
+      nav a{
+        border:none;
+        padding:0;
+        font-size:14px;
+      }
+
+      .hero{
+        min-height:620px;
+      }
+
+      .hero h1{
+        font-size:56px;
+      }
+
+      .services-grid{
+        grid-template-columns:repeat(3,1fr);
+      }
+
+      .benefits-grid{
+        grid-template-columns:repeat(4,1fr);
+      }
+
+      .about-grid{
+        grid-template-columns:1fr 1fr;
+        align-items:center;
+      }
+
+      .details-grid{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:18px;
+      }
+
+      .detail-card{
+        margin:0;
+      }
+
+      .portfolio-grid{
+        grid-template-columns:repeat(4,1fr);
+      }
+
+      .portfolio-item{
+        height:230px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-content">
+
+    <a href="#" class="logo">
+      D’PIRES
+      <small>IMPERMEABILIZAÇÃO</small>
+    </a>
+
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+    <nav id="menu">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="container hero-content">
+
+    <div class="hero-badge">
+      Atendimento em São Luís – MA
+    </div>
+
+    <h1>Proteção e qualidade para o seu imóvel.</h1>
+
+    <p>
+      Impermeabilização, reformas e pinturas com soluções
+      para imóveis residenciais e comerciais.
+    </p>
+
+    <a
+      class="btn btn-whatsapp"
+      href="https://wa.me/5598999725259?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+      target="_blank"
+    >
+      💬 Solicitar orçamento
+    </a>
+
+  </div>
+</section>
+
+
+<section id="servicos">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>Nossos serviços</span>
+      <h2>Soluções completas para seu imóvel</h2>
+      <p>
+        Serviços de impermeabilização, pintura e reformas
+        para residências e estabelecimentos comerciais.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <article class="service-card">
+
+        <div class="service-image impermeabilizacao"></div>
+
+        <div class="service-content">
+          <div class="service-icon">💧</div>
+
+          <h3>Impermeabilização</h3>
+
+          <p>
+            Proteção de lajes, calhas, reservatórios, paredes
+            e outras áreas contra infiltrações e umidade.
+          </p>
+        </div>
+
+      </article>
+
+
+      <article class="service-card">
+
+        <div class="service-image pintura"></div>
+
+        <div class="service-content">
+          <div class="service-icon">🎨</div>
+
+          <h3>Pintura</h3>
+
+          <p>
+            Pinturas internas e externas para renovar e
+            valorizar imóveis residenciais e comerciais.
+          </p>
+        </div>
+
+      </article>
+
+
+      <article class="service-card">
+
+        <div class="service-image reformas"></div>
+
+        <div class="service-content">
+          <div class="service-icon">🔨</div>
+
+          <h3>Reformas</h3>
+
+          <p>
+            Reformas e reparos para melhorar, recuperar
+            e transformar diferentes ambientes.
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+  </div>
+
+</section>
+
+
+<section class="benefits">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>Por que escolher a D’Pires?</span>
+      <h2>Compromisso com seu imóvel</h2>
+    </div>
+
+    <div class="benefits-grid">
+
+      <div class="benefit">
+        <div class="benefit-icon">✓</div>
+        <h3>Serviço de qualidade</h3>
+      </div>
+
+      <div class="benefit">
+        <div class="benefit-icon">👤</div>
+        <h3>Atendimento personalizado</h3>
+      </div>
+
+      <div class="benefit">
+        <div class="benefit-icon">⏱</div>
+        <h3>Pontualidade na entrega</h3>
+      </div>
+
+      <div class="benefit">
+        <div class="benefit-icon">🛡</div>
+        <h3>Soluções duradouras</h3>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="about" id="sobre">
+
+  <div class="container about-grid">
+
+    <div class="about-image"></div>
+
+    <div class="about-content">
+
+      <span style="color:#0757b7;font-weight:900;font-size:13px;">
+        SOBRE NÓS
+      </span>
+
+      <h2>Experiência e cuidado em cada serviço.</h2>
+
+      <p>
+        A D’Pires Impermeabilização atua com serviços de
+        impermeabilização, reformas e pinturas em São Luís – MA.
+      </p>
+
+      <p>
+        Trabalhamos com soluções para prevenção e correção
+        de infiltrações, umidade, recuperação de ambientes
+        e renovação de imóveis.
+      </p>
+
+      <div class="check">
+        <span>✓</span> Atendimento residencial
+      </div>
+
+      <div class="check">
+        <span>✓</span> Atendimento comercial
+      </div>
+
+      <div class="check">
+        <span>✓</span> Avaliação conforme a necessidade do imóvel
+      </div>
+
+      <br>
+
+      <a
+        class="btn btn-blue"
+        href="https://wa.me/5598999725259?text=Olá!%20Gostaria%20de%20falar%20sobre%20um%20serviço."
+        target="_blank"
+      >
+        Falar com a D’Pires
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="details">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>O que fazemos</span>
+      <h2>Conheça nossos serviços</h2>
+    </div>
+
+    <div class="details-grid">
+
+      <div class="detail-card">
+
+        <h3>💧 Impermeabilização</h3>
+
+        <ul>
+          <li>Impermeabilização de lajes</li>
+          <li>Impermeabilização de calhas</li>
+          <li>Impermeabilização de reservatórios</li>
+          <li>Impermeabilização de telhados</li>
+          <li>Impermeabilização de paredes</li>
+          <li>Impermeabilização de áreas externas</li>
+          <li>Impermeabilização de banheiros</li>
+          <li>Impermeabilização de áreas molhadas</li>
+          <li>Tratamento contra infiltrações</li>
+          <li>Tratamento de umidade</li>
+          <li>Correção de infiltrações</li>
+          <li>Aplicação de manta impermeabilizante</li>
+        </ul>
+
+      </div>
+
+
+      <div class="detail-card">
+
+        <h3>🎨 Pintura</h3>
+
+        <ul>
+          <li>Pintura residencial</li>
+          <li>Pintura comercial</li>
+          <li>Pintura interna</li>
+          <li>Pintura externa</li>
+          <li>Pintura de fachadas</li>
+          <li>Pintura de paredes</li>
+          <li>Pintura de tetos</li>
+          <li>Preparação de paredes</li>
+          <li>Correção de trincas e fissuras</li>
+          <li>Aplicação de massa corrida</li>
+        </ul>
+
+      </div>
+
+
+      <div class="detail-card">
+
+        <h3>🔨 Reformas</h3>
+
+        <ul>
+          <li>Reformas residenciais</li>
+          <li>Reformas comerciais</li>
+          <li>Reformas em geral</li>
+          <li>Reforma de casas</li>
+          <li>Reforma de apartamentos</li>
+          <li>Reforma de áreas externas</li>
+          <li>Recuperação de paredes</li>
+          <li>Reparos em alvenaria</li>
+          <li>Reparos e manutenção predial</li>
+          <li>Pequenas reformas</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="portfolio" id="portfolio">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>Nosso trabalho</span>
+      <h2>Serviços realizados</h2>
+      <p>
+        Alguns exemplos dos tipos de trabalhos realizados pela D’Pires.
+      </p>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-item">
+        <img
+          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80"
+          alt="Serviço de impermeabilização"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="portfolio-item">
+        <img
+          src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&w=600&q=80"
+          alt="Serviço de pintura"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="portfolio-item">
+        <img
+          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80"
+          alt="Serviço de reforma"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="portfolio-item">
+        <img
+          src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80"
+          alt="Reforma e manutenção"
+          loading="lazy"
+        >
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="cta" id="contato">
+
+  <div class="container">
+
+    <h2>Precisa de orçamento?</h2>
+
+    <p>
+      Fale com a D’Pires e conte o que está acontecendo
+      no seu imóvel. Solicite uma avaliação.
+    </p>
+
+    <a
+      class="btn btn-whatsapp"
+      href="https://wa.me/5598999725259?text=Olá!%20Encontrei%20o%20site%20da%20D'Pires%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+      target="_blank"
+    >
+      💬 Chamar no WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <div class="logo">
+      D’PIRES
+      <small style="color:#aaa;text-align:left;">
+        IMPERMEABILIZAÇÃO
+      </small>
+    </div>
+
+    <p class="footer-text">
+      Impermeabilização, pinturas e reformas em São Luís – MA.
+    </p>
+
+    <div class="contact-item">
+      📞 (98) 99972-5259
+    </div>
+
+    <div class="contact-item">
+      📍 R. Francisco Alves, 70 – Vila Ivar Saldanha
+    </div>
+
+    <div class="contact-item">
+      São Luís – MA
+    </div>
+
+    <div class="copyright">
+      © 2026 D’Pires Impermeabilização. Todos os direitos reservados.
+    </div>
+
+  </div>
+
+</footer>
+
+
+<a
+  class="whatsapp-fixed"
+  href="https://wa.me/5598999725259?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+  target="_blank"
+  aria-label="Falar pelo WhatsApp"
+>
+  ☎
+</a>
+
+
+<script>
+
+  function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+  }
+
+  document.querySelectorAll("#menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      document.getElementById("menu").classList.remove("active");
+    });
+  });
+
+</script>
+
+</body>
+</html>
